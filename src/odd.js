@@ -7,3 +7,5 @@ const MAX = Number.MAX_SAFE_INTEGER ;
 if ( NUM % 2 !==0) {
 	console.log("\nEven.\n");
 }
+
+let number = 0;
