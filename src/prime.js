@@ -1,7 +1,7 @@
 const readlineSync = require("readline-sync");
 
 let value = -1;
-let isPrime = true;
+let isPrimeNumber = true;
 
 while (value <= 0 ) {
 value = readlineSync.question("Non-Negative integer: ");
@@ -10,14 +10,14 @@ let num = parseInt( value );
 
 for( var i = 2; i < num; i++ ) {
 if( num % i == 0) {
-isPrime = false;
+isPrimeNumber = false;
 break;
 }
 }
 
 }
 
-if( isPrime) {
+if( isPrimeNumber) {
 console.log("\nPrime.");
 } else {
 console.log("\nNot Prime.");
