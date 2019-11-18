@@ -1,3 +1,5 @@
+const readlineSync = require("readline-sync");
+
 let value = -1;
 let isPrime = true;
 
