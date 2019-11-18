@@ -1,46 +1,20 @@
 const readlineSync = require("readline-sync");
-const NUM = Number(readlineSync.question("\nPositive integer: "));
 
-
-const MIN = Number.MIN_SAFE_INTEGER;
-const MAX = Number.MAX_SAFE_INTEGER;
-
-let num = "";
-let endSum = 0;
-
-
-if (num % 2 !==0){
- do {
-endSum = num % 2 !==0;
-num = num + endSum + ", ";
-num = num - endSum
-num= num/10;
+let sum = 0;
+let value = 0;
+while (value <= 0) {
+value = readlineSync.question("Positive Integer: "); //345
+let num = value;
+while ( num > 0 )
+{
+let n = num % 10 ; // n = 5 , 4 ,3
+if( n % 2 != 0)
+{
+sum = sum + n; // 5 +3
+}
+num = parseInt( num / 10 ); //34 , 3 ,0
+}
 
 }
 
- while (number > 10);
-
-num = num + endSum + "."
-
-console.log(num);}
-
-
-
-
-
-const readlineSync = require("readline-sync");
-const NUM = Number(readlineSync.question("\nPositive integer: "));
-
-
-const MIN = Number.MIN_SAFE_INTEGER ;
-const MAX = Number.MAX_SAFE_INTEGER ;
-let endSum = 0;
-
-  
-  for (let endSum = 1; endSum < NUM; endSum++) {
-    
-    if(endSum % 2 !== 0) {
-     
-      console.log(endSum);
-    }
-  }
+console.log("\n" + sum + '.');
