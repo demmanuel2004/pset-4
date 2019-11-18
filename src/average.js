@@ -1,16 +1,22 @@
 const readlineSync = require("readline-sync");
 
-console.log("Enter non-negative integers.\n")
-console.log("Enter -1 to stop.\n");
-
+let count = 0; 
 let sum = 0;
 let value = 0;
-while (value !== -1) {
-    value = readlineSync.question("Enter value: ");
+
+while (value <= 0) {
+value = readlineSync.question("Non=Negative integer: "); 
+
     
-    if (value !== -1) {
-        sum = sum + value;
-    }
-}
+    num = parseInt (value);
+    
+    if (num >= 0) {
+        count++;
+        sum+= num; 
+        }
         
-console.log("\nSum: " + sum);
+        }
+        
+        avg = sum / count;
+        avg = avg.toLocaleString(undefined, {minimumFractionDigits:3} );
+    console.log ("\n" + avg + '.');
