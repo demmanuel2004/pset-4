@@ -4,7 +4,7 @@ let value = -1;
 let isPrimeNumber = true;
 
 while (value <= 0 ) {
-value = readlineSync.question("Non-Negative integer: ");
+value = readlineSync.question("Positive integer: ");
 
 let num = parseInt( value );
 
