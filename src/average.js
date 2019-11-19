@@ -1,20 +1,24 @@
 const readlineSync = require("readline-sync");
 
-let count = 0; //how many numbers
-let sum = 0; //sum of numbers
 let value = 0;
+let isPrimeNumber = true;
 
-while (value >= 0) {
-value = readlineSync.question("Non-Negative integer: ");
+while (value <= 0 ) {
+value = readlineSync.question("Positive integer: ");
 
-num = parseInt (value) ;
+let num = parseInt( value );
 
-if( num >= 0) {
-count++;
-sum += num; // sum = sum+num
+for( var i = 2; i < num; i++ ) {
+if( num % i === 0) {
+isPrimeNumber = false;
+break;
 }
 }
 
-avg = sum / count;
-avg = avg.toLocaleString(undefined, {minimumFractionDigits:3} );
-console.log("\n" + avg + '.');
+}
+
+if( isPrimeNumber) {
+console.log("\nPrime.");
+} else {
+console.log(i);
+}
