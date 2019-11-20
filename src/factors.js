@@ -1,5 +1,3 @@
-const readlineSync = require("readline-sync");
-
 const MIN = Number.MIN_SAFE_INTEGER ;
 const MAX = Number.MAX_SAFE_INTEGER ;
 
@@ -11,7 +9,7 @@ value = readlineSync.question("Positive integer: ");
 
 let num = parseInt( value );
 
-for( let i = 2; i < num; i++ ) {
+for( var i = 2; i < num; i++ ) {
 if( num % i == 0) {
 isPrimeNumber = false;
 break;
