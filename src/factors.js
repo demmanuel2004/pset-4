@@ -12,11 +12,11 @@ value = readlineSync.question("Positive integer: ");
 let num = parseInt( value );
 
 for( var i = 0; i < num; i++ ) {
-if( num % i == 0) {
+ if( num % i == 0) {
  isPrimeNumber = false;
-console.log(i);
-}
-}
+  console.log(i);
+  }
+ }
 
 }
 if( isPrimeNumber) {
