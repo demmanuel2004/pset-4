@@ -10,11 +10,11 @@ value = readlineSync.question("Height: ");
 
 num = parseInt(value);
 
-if (num > 0 && num <= 24) { //num=7
+if (num > 0 && num <= 24) { 
 
-for (i = 1; i <= num; i++) {//1-7
-var spaces = num - i; //i=1 , spaces =7-1=6
-var hashes = i + 1; //i=1 ,hashes=1+1=2
+for (i = 1; i <= num; i++) {
+var spaces = num - i; 
+var hashes = i + 1; 
 
 var spaceText = '';
 var hashText = '';
