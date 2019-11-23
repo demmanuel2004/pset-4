@@ -10,19 +10,19 @@ limit = Math.sqrt(num);
 
 factors = '';
 
-for (var i = 1; i <= limit; i++) { //i=1,i=2,i=3 , i=4 , i=5 , i=6 , i=7 , i=8 , i=9 , i=27
-if (num % i == 0) { //81%1 =0
-smallNum = i; //smallnum=1 , 3 ,9 , 27
-largeNum = num / i; //largenum=81 27 , 9 , 3
+for (var i = 1; i <= limit; i++) { 
+if (num % i == 0) { 
+smallNum = i; 
+largeNum = num / i; 
 
 if (factors.length == 0) {
-factors = i; // factors = 1,
+factors = i; 
 } else {
 factors += ',' + smallNum;
 }
 
 if (smallNum != largeNum) {
-factors += ',' + largeNum; //factors = 1,81,
+factors += ',' + largeNum; 
 }
 }
 }
