@@ -1,6 +1,8 @@
 const readlineSync = require("readline-sync");
 
 let value = 0;
+let heightRight;
+let heightLeft;
 
 
 while (value < 1 || value > 24) {
@@ -16,11 +18,11 @@ var hashes = i + 1; //i=1 ,hashes=1+1=2
 
 var spaceText = '';
 var hashText = '';
-//j is inside i loop
-for( j = 1; j <= spaces; j++) {//j=1 ,spacetext= . ,j=2,spacetext = .. , j=3 ,spacetext = ... ,j=4, spacetext= .... ,j=5 spacetext=..... , j=6 , spacetxt=......
-spaceText += ' ';//spacetext=spacetext+''
+
+for( j = 1; j <= spaces; j++) {
+spaceText += ' ';
 }
-for( j = 1; j <= hashes; j++ ) {//j=1,hashtext=# ,j=2 ,hashtext=##
+for( j = 1; j <= hashes; j++ ) {
 hashText += '#';
 }
 console.log(spaceText + hashText); 
