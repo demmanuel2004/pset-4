@@ -6,7 +6,7 @@ value = readlineSync.question("Positive integer: ");
 num = parseInt(value);
 
 limit = Math.sqrt(num);
-//81 ,limit =9
+
 
 factors = '';
 
