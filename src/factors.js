@@ -18,14 +18,14 @@ largeNum = num / i;
 if (factors.length == 0) {
 factors = i; 
 } else {
-factors += ',' + smallNum;
+factors += ', ' + smallNum;
 }
 
 if (smallNum != largeNum) {
-factors += ',' + largeNum; 
+factors += ', ' + largeNum; 
 }
 }
 }
 
-console.log(factors);
+console.log(factors + '.');
 }
