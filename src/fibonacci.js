@@ -7,7 +7,7 @@ let b = 1;
 let c = 1;
 
 while (value < 1 || value > 78) {
-value = readlineSync.question("Non-Negative integer: ");
+value = readlineSync.question("Positive integer: ");
 
 
 num = parseInt(value);
