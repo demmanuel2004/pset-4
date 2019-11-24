@@ -5,7 +5,7 @@ let sum = 0;
 let value = 0;
 
 while (value >= 0) {
-value = readlineSync.question("Non-Negative integer: ");
+value = readlineSync.question("Non-negative integer: ");
 
 num = parseInt ( value ) ;
 
