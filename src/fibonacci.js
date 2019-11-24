@@ -13,7 +13,6 @@ value = readlineSync.question("Non-Negative integer: ");
 num = parseInt(value);
 
 if (num > 0 && num <= 78) {
-// 0 1 2 3
 for (i = 2; i <= num; i++) { 
 c = a + b; 
 a = b;
