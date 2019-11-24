@@ -1,9 +1,6 @@
 const readlineSync = require("readline-sync");
 
 let value = 0;
-let heightRight;
-let heightLeft;
-
 
 while (value < 1 || value > 24) {
 value = readlineSync.question("Height: ");
