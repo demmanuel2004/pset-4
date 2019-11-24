@@ -19,4 +19,4 @@ do {
 } while (number > 10);
 
 reversed = reversed + number + "."
-console.log("\n" + reversed + '.');
+console.log(reversed + '.');
