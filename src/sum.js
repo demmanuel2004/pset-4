@@ -3,7 +3,7 @@ const readlineSync = require("readline-sync");
 const MIN = Number.MIN_SAFE_INTEGER ;
 const MAX = Number.MAX_SAFE_INTEGER ;
 
-let lowerBound = Number(readlineSync.question("\nLower board: "));
+let lowerBound = Number(readlineSync.question("\nLower bound: "));
 let upperBound = Number(readlineSync.question("Upper bound: "));
 let sum = 0;
 let secondSum = 0;
