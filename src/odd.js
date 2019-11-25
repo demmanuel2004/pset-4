@@ -4,7 +4,7 @@ let sum = 0;
 let value = 0;
 
 while (value <= 0) {
-value = readlineSync.question("Positive Integer: "); 
+value = readlineSync.question("Positive integer: "); 
 let num = value;
 while ( num > 0 )
 {
