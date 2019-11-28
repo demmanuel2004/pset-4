@@ -36,9 +36,9 @@ oddSum += num.charAt(i-1) * 1;
 var totalSum = evenSum + oddSum;
 
 if (totalSum % 10 == 0) {
-console.log("AMEX");
+console.log("\nAmex.\n");
 } else {
-console.log("Invalid.");
+console.log("\nInvalid.\n");
 }
 }
 } else if (length == 16 || length == 13) {
@@ -68,10 +68,10 @@ oddSum += num.charAt(i-1) * 1;
 }
 var totalSum = evenSum + oddSum;
 if (totalSum % 10 == 0) {
-console.log("Mastercard");
+console.log("\nMastercard\n");
 }
 else {
-console.log("Invalid.");
+console.log("\nInvalid\n.");
 }
 }else if (firstDigit == 4 )
 {
@@ -98,14 +98,14 @@ oddSum += num.charAt(i-1) * 1;
 }
 var totalSum = evenSum + oddSum;
 if (totalSum % 10 == 0) {
-console.log("Visa");
+console.log("\nVisa\n");
 }
 else {
-console.log("Invalid.");
+console.log("\nInvalid.\n");
 }
-}else{console.log("invalid");}
+}else{console.log("\ninvalid\n");}
 
 } else {
-console.log("invalid");
+console.log("\ninvalid\n");
 }
 }
